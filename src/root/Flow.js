@@ -7,10 +7,10 @@ import ReactFlow, {
 	applyEdgeChanges,
 	applyNodeChanges,
 	addEdge,
-} from 'reactflow';
-import 'reactflow/dist/style.css';
+} from 'reactflow'
 
-
+import 'reactflow/dist/style.css'
+import styles from './Flow.module.css'
 
 const initialNodes = [
 	{
@@ -60,9 +60,9 @@ const Flow = () => {
     }, [id])
 
 	return (
-		<div style={{ height: '90vh', width: '100vx', paddingTop: 20, }}>
-            <a id='buttonContainer' onClick={AddNewNode} style={{backgroundColor: '#ACDF87', padding: 10, borderRadius: 15, marginLeft: 15, }}>
-                <span id='buttonText' style={{fontSize: 20, fontWeight: 'bold', color: 'green'}}>+ Add New Node</span>
+		<div className={styles.container}>
+            <a className={styles.button} onClick={AddNewNode}>
+                <span className={styles.buttonText}>+ Add New Node</span>
             </a>
 			<ReactFlow
 				nodes={nodes}
@@ -76,7 +76,7 @@ const Flow = () => {
                 <MiniMap />
 			</ReactFlow>
 		</div>
-	);
+	)
 }
 
 export default Flow

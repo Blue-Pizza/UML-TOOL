@@ -1,0 +1,18 @@
+.container {
+    height: 90vh;
+    width: 100vw;
+    padding-top: 20px;
+}
+
+.button {
+    background-color: #ACDF87;
+    padding: 10px;
+    border-radius: 15px;
+    margin-left: 15px;
+}
+
+.buttonText {
+    font-size: 20px;
+    font-weight: bold;
+    color: green;
+}
